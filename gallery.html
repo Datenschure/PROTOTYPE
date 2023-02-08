@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chess Gallery</title>
+        <link rel="stylesheet" href="gallery.css">
+    </head>
+    <body>
+        <div class="full-img" id="fullImgBox"> 
+            <img src="Chess pictures/img 2.jpg" id=fullImg>
+            <span onclick="closeFullImg()">X</span>
+        </div>
+        <center>
+        <marquee width=150px
+        bgcolor="grey"
+        behavior="alternate"
+        direction="right"
+        loop="infinite">
+        <strong><a href="MAIN INDEX.HTML">Home</a></strong>
+    </center>
+</marquee>
+    <marquee width=150px
+    bgcolor="grey"
+    behavior="alternate"
+    direction="LEFT"
+    loop="infinite">
+    <strong><a href="meme chess.html">More</a></strong>
+</marquee>
+
+
+<div class="img-gallery">
+    <img src="Chess pictures/img 1.jpg" onclick="openFullImg(this.src)">
+    <img src="Chess pictures/img 2.jpg" onclick="openFullImg(this.src)">
+    <img src="Chess pictures/img 3.jpg" onclick="openFullImg(this.src)">
+    <img src="Chess pictures/img 4.jpg" onclick="openFullImg(this.src)">
+    <img src="Chess pictures/img 5.jpg" onclick="openFullImg(this.src)">
+    <img src="Chess pictures/1.jpg"     onclick="openFullImg(this.src)">
+    <img src="Chess pictures/img 6.jpg" onclick="openFullImg(this.src)">
+    <img src="Chess pictures/img 8.jpg" onclick="openFullImg(this.src)">
+</div>
+
+<script>
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg (pic){
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+    }
+
+    function closeFullImg(){
+        fullImgBox.style.display = "none";
+    }
+
+ </script>
+</body>
+</html>
